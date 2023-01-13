@@ -1,0 +1,16 @@
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  padding: 14px 27px;
+  border-radius: 3px;
+  color: #000;
+  background: #f6f8fa;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+  line-height: 25px;
+
+  &::placeholder {
+    opacity: 1;
+  }
+}

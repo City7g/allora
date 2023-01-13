@@ -1,0 +1,65 @@
+.btn-main {
+  display: inline-block;
+  padding: 15px 47px;
+  color: $white;
+  background: $primary;
+  border-radius: 30px;
+  font-size: 15px;
+  line-height: 24px;
+  transition: 0.5s background-color ease;
+  
+  @media (max-width: 767px) {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    color: $white;
+    background: darken($primary, 7%);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $black;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 51px;
+  color: $black;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid $primary;
+  font-size: 15px;
+  line-height: 24px;
+  transition: 0.5s ease;
+  transition-property: color, background-color;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus-visible {
+    color: $white;
+    background-color: $primary;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $black;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

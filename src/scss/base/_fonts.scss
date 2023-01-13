@@ -1,0 +1,46 @@
+// Inlcude fonts
+@include font-face('Roboto', 'Roboto-Regular', 400);
+@include font-face('Roboto', 'Roboto-Bold', 700);
+@include font-face('YesevaOne', 'YesevaOne-Regular', 400);
+@include font-face('UnicaOne', 'UnicaOne-Regular', 400);
+
+// Main Fonts
+.title-h1 {
+  font-family: 'YesevaOne';
+  font-size: 70px;
+  line-height: 75px;
+}
+
+.title-h2 {
+  font-family: 'YesevaOne';
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.title-h3 {
+  font-family: 'YesevaOne';
+  font-size: 25px;
+  line-height: 36px;
+}
+
+.title-h4 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.title-h6 {
+  font-family: 'UnicaOne';
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.text-main {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text-small {
+  font-size: 15px;
+  line-height: 25px;
+}

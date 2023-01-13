@@ -1,0 +1,155 @@
+extends ../layout/main
+
+block content
+  - const procedure = ['Goal Identification', 'Scope Definition', 'Sitemap and Wireframe Creation', 'Content Creation', 'Visual Elements', 'Testing & Launch']
+
+  section.first
+    .container
+      .first__wrap
+        .first__header 
+          | 2016-22
+          .first__circles
+          | Allora = design + thinking
+        h1.title-h1.first__title Award winning digital design agency based in California
+        p.text-main.first__text is a beautiful and simple Webflow Portfolio Template for those creatives and digital studios that want to have a powerful yet simple website where they can showcase their work and services. Allora. is the perfect fit for your business.
+        .first__btns
+          a(href="#").btn-secondary Start a Project
+          a(href="#").btn-main We're Hiring
+        img(src="/img/first.png", alt="").first__img
+
+  section.second
+    - for (var x = 1; x < 7; x++)
+      .card
+        .card__info
+        img(src=`/img/card/item-${x}.jpg`, alt="").card__img
+
+  section.solution
+    .container
+      .section__header
+        h4.title-h6.section__subtitle.solution__subtitle beautiful creative solutions
+        h2.title-h2.solution__title Expect nothing less than perfect
+        p.text-main.solution__text Setting up your own portfolio site is an awesome method for communicating who you are as an inventive, and to impart your abilities to the world. How about we investigate how to make a free portfolio and all that you ought to remember for it.
+        a(href="#").section__link How we work
+      
+      .solution__list
+        - for (var x = 1; x <= 5; x++)
+          .some
+            img(src=`/img/solution/item-${x}.png`, alt="").some__img
+            h4.title-h3.some__title Web Design
+            p.text-small.some__text Why investment portfolio is important to your career Allora can help you get your work noticed whether you are a graphic designer, product designer, web developer, writer, illustrator.
+
+  section.procedure
+    .container
+      .section__header
+        h5.title-h6.section__subtitle.procedure__subtitle Procedure
+        h2.title-h2.procedure__title The goal isn't to build a website but to build your business
+        p.text-main.procedure__text The online portfolio works in a similar way in a user-friendly design it collects items that represent the best work you have done. This shows that you have a sense of responsibility and take your work seriously.
+        a(href="#").section__link Know more about us
+      .procedure__list
+        each step, index in procedure
+          .step
+            .step__number= '0' + (index + 1)
+            .step__title= step
+
+  section.about
+    .container
+      .about__wrap
+        .about__content
+          h5.title-h6.section__subtitle.about__subtitle about medium
+          h2.title-h2.about__title Creating ideas & building brands that truly matter
+          p.text-main.about__text When building your own portfolio, don't feel that you need to include anything you have ever created. Plan your best work and show the types of projects you want to do more.
+          a(href="#").section__link Our core values
+        .about__image
+          .comment
+            p.text-small.comment__text "Allora has completely surpassed our expectations not able to tell you how happy I am with your awesome work guys."
+            .comment__author
+              img(src="/img/avatar-1.jpg", alt="").comment__img
+              .comment__name Robert Keynton
+              .comment__prof Designer at Webflow
+          .comment
+            p.text-small.comment__text "Allora has completely surpassed our expectations not able to tell you how happy I am with your awesome work guys."
+            .comment__author
+              img(src="/img/avatar-2.jpg", alt="").comment__img
+              .comment__name Lindsay Strotman
+              .comment__prof CEO of Edition
+          img(src="/img/about.jpg", alt="").about__img
+
+  section.values
+    .container
+      .values__header
+        h5.title-h6.section__subtitle.values__subtitle our core values
+        h2.title-h2.values__title How we're different
+        p.text-main.values__text When creating a portfolio, be sure to: There is a strategy behind the projects you showcase in your website design. Know what skills you want to communicate.
+        a(href="#").section__link See FAQs
+
+      .values__image
+        .value
+          .value__title 01 / Data driven
+          .value__text Identify the types of customers you want to reach and create a plan accordingly.
+        .value
+          .value__title 02 / Result oriented
+          .value__text Show your personal style and aesthetics. Assemble an online portfolio to capture the essence of your identity.
+        .value
+          .value__title 03 / Forward thinking
+          .value__text Think of your homepage as a cohesive work body. Each project image, text block etc needs to be harmoniously combined.
+        img(src="/img/values.svg", alt="").values__img
+
+  section.questions
+    .container
+      .section__header
+        h5.title-h6.section__subtitle.questions__subtitle Frequently Asked questions
+        h2.title-h2.questions__title Some questions you might have
+        p.text-main.questions__text Every project you have participated in is a unique journey from the initial spark of an idea to the final signing, there are personal challenges, problems that need to be solved.
+        a(href="#").section__link Our Clients
+
+      .questions__list
+        - for (var x = 1; x <= 6; x++)
+          .question
+            h5.title-h4.question__title Can you design my Website?
+            p.text-small.question__text Include large and wonderful examples of your work, not just provide a few lines of neat text about each project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role ultimately helped your customers achieve their goals.
+
+  section.clients
+    .container
+      .clients__wrap
+        .clients__content
+          h4.title-h6.clients__subtitle.section__subtitle Our Clients
+          h2.title-h2.clients__title Join world's best brands who trusted Allora
+          p.text-main.clients__text Most creative projects involve collaboration. People want to know what it’s going to be like working with you and how your skills and talents can help them.
+          a(href="#").section__link Start a project
+          .clients__list
+            - for (var x = 1; x <= 9; x++)
+              img(src=`/img/client/item-${x}.svg`, alt="")
+          p.text-main.section__text By telling these stories, they get a glimpse into your creative process and know what to expect if they hire you.
+        .clients__image
+          img(src="/img/client.jpg", alt="").clients__img
+
+  section.contact
+    .container
+      .contact__header
+        h4.title-h6.section__subtitle.contact__subtitle Contact Us
+        h2.title-h2.contact__title Dedicated to serve our customers
+        p.contact__text Branding isn’t only for big companies. Whether you’re a retail giant or a freelancer, branding shows your value and how you’re different from the competition.
+
+      .contact__wrap
+        .contact-card
+          span.contact-card__number 01
+          h5.title-h6.contact-card__title Collaborate
+          p.text-small.contact-card__text If you're ready to start a project, fill up the form below and our team will be in touch to find out more.
+          a(href="#").contact-card__link hello@allora.com
+          .contact-card__form
+            input(type="text", name="name", placeholder="Name")
+            input(type="email", name="email", placeholder="Email")
+            input(type="tel", name="phone", placeholder="Phone")
+            textarea(name="message", placeholder="Please indicate the nature of your inquiry...")
+
+        .contact-card
+          span.contact-card__number 02
+          h5.title-h6.contact-card__title Join our team
+          p.text-small.contact-card__text We're always looking for talented new members that push us to be bolder, dream bigger, and perform better.
+          a(href="#").contact-card__link team@allora.com
+
+        .contact-card
+          span.contact-card__number 03
+          h5.title-h6.contact-card__title Just say hello
+          p.text-small.contact-card__text Used as a greeting or to begin a phone conversation, so here are the details to do so.
+          a(href="#").contact-card__link +1123 456 7890

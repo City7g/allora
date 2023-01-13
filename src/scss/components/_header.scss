@@ -1,0 +1,45 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: $white;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 96px;
+    padding: 20px 50px;
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &__link {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -0px;
+      display: block;
+      height: 1px;
+      background-color: $primary;
+      content: '';
+    }
+  }
+
+  &__separator {
+    width: 6px;
+    height: 6px;
+    background-color: $primary;
+  }
+
+  &__icon img {
+    display: block;
+  }
+}
